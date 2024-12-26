@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LogInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="280dp"
+            android:layout_marginBottom="-30dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/bold_app_logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/profile_img" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:gravity="top"
+                android:text="@string/sign_in_with"
+                android:textColor="@color/orange"
+                android:textSize="25sp" />
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="-5dp"
+                android:contentDescription="@string/google_logo"
+                android:gravity="top"
+                android:src="@drawable/google" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="-5dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_btn"
+            android:contentDescription="@string/sign_in_button"
+            android:text="@string/sign_in"
+            android:textColor="@color/orange"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_marginBottom="200dp"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/blue"/>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

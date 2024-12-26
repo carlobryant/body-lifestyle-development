@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:elevation="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rv_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvMonthDayItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/month_day"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/imgItem"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvYearItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-4dp"
+            android:text="@string/year"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/tvMonthDayItem"
+            app:layout_constraintTop_toBottomOf="@+id/tvMonthDayItem" />
+
+        <TextView
+            android:id="@+id/tvBMIItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/bmi"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/tvYearItem"
+            app:layout_constraintTop_toBottomOf="@+id/tvYearItem" />
+
+        <TextView
+            android:id="@+id/tvCardioItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-8dp"
+            android:text="@string/cardio_health"
+            android:textSize="12.5sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/tvBMIItem"
+            app:layout_constraintTop_toBottomOf="@+id/tvBMIItem" />
+
+        <ImageView
+            android:id="@+id/imgItem"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/ic_rv_normal" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+

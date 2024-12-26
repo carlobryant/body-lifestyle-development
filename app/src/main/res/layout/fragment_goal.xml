@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.GoalFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/imageCardio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/improve_cardio_health"
+                android:scaleType="fitCenter"
+                android:src="@drawable/goal_cardio" />
+
+            <ImageButton
+                android:id="@+id/imageMuscle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/gain_muscle_mass"
+                android:scaleType="fitCenter"
+                android:src="@drawable/goal_muscle" />
+
+            <ImageButton
+                android:id="@+id/imageWeightLoss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/lose_weight"
+                android:scaleType="fitCenter"
+                android:src="@drawable/goal_weightloss" />
+
+            <ImageButton
+                android:id="@+id/imageFlexibility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:contentDescription="@string/enhance_flexibility"
+                android:scaleType="fitCenter"
+                android:src="@drawable/goal_flexibility" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

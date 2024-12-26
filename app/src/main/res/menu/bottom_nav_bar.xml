@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/goal"
+        android:id="@+id/goal"
+        android:icon="@drawable/ic_menu_goal" />
+
+    <item android:title="@string/fitness"
+        android:id="@+id/fitness"
+        android:icon="@drawable/ic_menu_fitness" />
+
+    <item android:title="@string/profile"
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_menu_profile" />
+</menu>
